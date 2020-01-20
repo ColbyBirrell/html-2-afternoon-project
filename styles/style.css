@@ -1,0 +1,29 @@
+/* body {
+  background-color: black;
+} */
+
+.nav-bar {
+  background-color: black;
+  height: 5vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-bar > .nav-middle {
+  display: flex;
+  align-items: center;
+  color: white;
+  list-style: none;
+  justify-content: space-around;
+}
+
+.nav-bar > .nav-end {
+  display: flex;
+  align-items: center;
+  color: white;
+  list-style: none;
+  justify-content: space-around;
+}
