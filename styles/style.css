@@ -15,6 +15,8 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  position: fixed;
+  z-index: 10;
 }
 
 /* .nav-bar > .nav-logo {
@@ -54,6 +56,7 @@
   height: 70vh;
   background-image: url("https://www.spacex.com/sites/spacex/files/nasa_astronauts3.jpg");
   background-size: cover;
+  box-sizing: border-box;
   /* background-position:; */
 }
 
@@ -98,7 +101,7 @@
   height: 25%;
   width: 50%;
   opacity: 100%;
-  background-color: black;
+  /* background-color: black; */
   color: white;
 }
 
@@ -120,6 +123,11 @@
   flex-direction: row;
 }
 
+.info-button {
+  width: 200px;
+  height: 50px;
+}
+
 .info-bottom-stuff {
   /* width: 33%; */
   text-align: center;
@@ -135,9 +143,17 @@
 
 .card-holder {
   margin-bottom: 500px;
+  /* display: flex;
+  justify-content: space-around;
+  align-items: center; */
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: space-around;
   align-items: center;
+  align-content: stretch;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .cards {
@@ -146,17 +162,24 @@
   /* justify-content: center; */
   width: 350px;
   height: 350px;
-  padding-left: 50px;
-  padding-top: 50px;
+  padding-left: 20px;
+  padding-top: 20px;
   background-color: white;
   /* border: black 2px solid; */
-  box-shadow: black 2px 2px 2px 2px;
+  box-shadow: slategrey 2px 2px 4px 2px;
 }
 
 .card-img {
-  /* width: %; */
-  align-content: center;
+  /* position: absolute;
+  top: 10px; */
+  width: 93%;
+  height: 50%;
 }
+
+/* .card-text {
+  position: absolute;
+  bottom: 50px; 
+} */
 
 .footer-bar {
   background-color: black;
