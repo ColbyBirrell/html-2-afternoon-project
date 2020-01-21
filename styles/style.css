@@ -1,6 +1,15 @@
 /* body {
   background-color: black;
 } */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* height: 300vh; */
+}
 
 .nav-bar {
   background-color: black;
@@ -12,18 +21,144 @@
   align-items: center;
 }
 
+/* .nav-bar > .nav-logo {
+  display: flex;
+  justify-content: center;
+  margin-left: 200px;
+} */
+
 .nav-bar > .nav-middle {
   display: flex;
+  flex-direction: row;
   align-items: center;
   color: white;
   list-style: none;
   justify-content: space-around;
+  width: 25%;
 }
 
 .nav-bar > .nav-end {
   display: flex;
   align-items: center;
+  color: grey;
+  list-style: none;
+  justify-content: space-around;
+  width: 25%;
+}
+
+.nav-words {
+  display: flex;
+  justify-content: space-around;
+}
+
+.big-img {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  height: 70vh;
+  background-image: url("https://www.spacex.com/sites/spacex/files/nasa_astronauts3.jpg");
+  background-size: cover;
+  /* background-position:; */
+}
+
+.big-img > .info-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 15%;
+  background-color: grey;
+  opacity: 70%;
+}
+
+.info-upper {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  align-items: center;
+  height: 70%;
+}
+
+.info-bottom {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  height: 30%;
+  opacity: 100%;
+}
+
+.info-head {
+  flex-direction: row;
+}
+
+.info-bottom-stuff {
+  width: 33%;
+  text-align: center;
+}
+
+.word-line {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-holder {
+  margin-bottom: 500px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cards {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  width: 350px;
+  height: 350px;
+  padding-left: 50px;
+  padding-top: 50px;
+  background-color: white;
+  /* border: black 2px solid; */
+  box-shadow: black 2px 2px 2px 2px;
+}
+
+.card-img {
+  width: %;
+  align-content: center;
+}
+
+.footer-bar {
+  background-color: black;
+  height: 5vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.footer-bar > .footer-middle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   color: white;
   list-style: none;
+  justify-content: space-around;
+  width: 25%;
+}
+
+.footer-copy {
+  display: flex;
+  align-items: center;
+  color: grey;
+  justify-content: space-around;
+  width: 25%;
+}
+
+.footer-words {
+  display: flex;
   justify-content: space-around;
 }
